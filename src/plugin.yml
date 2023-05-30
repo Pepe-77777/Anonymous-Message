@@ -1,0 +1,5 @@
+name: AnonymousMessages
+author: Pepe_Java
+description: Make the chat anonymous.
+version: 1.0.0
+main: br.com.pepe.Main
