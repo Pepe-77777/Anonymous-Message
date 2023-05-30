@@ -12,7 +12,7 @@ public class Main extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new Events(), this);
         main = this;
 
-        config.addDefault("prefix", "Anonymous: ");
+        config.addDefault("message", "Anonymous (%player%): %message%");
         config.options().copyDefaults(true);
         saveConfig();
     }

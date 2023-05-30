@@ -9,11 +9,9 @@ public class Events implements Listener {
 
     @EventHandler
     public void onMessage(AsyncPlayerChatEvent e) {
-        String prefix = Main.getMain().config.getString("prefix");
+        String message = Main.getMain().config.getString("message").replaceAll("%message%", e.getMessage()).replaceAll("%player%", e.getPlayer().getDisplayName());
 
-        e.setFormat(prefix + e.getMessage());
-
-
+        e.setFormat(message);
     }
 
 }
